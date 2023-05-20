@@ -1,5 +1,5 @@
 import React from 'react';
-function hello(){
-    return <h1>Hello World 2</h1>
+function hello(parameters){
+    return <h1>1 KG {parameters.name} is {parameters.rate}</h1>
 }
 export default hello
