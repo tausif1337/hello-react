@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './world.css'
 
 class twoWayDataBinding extends Component {
     state = {
@@ -9,16 +10,17 @@ class twoWayDataBinding extends Component {
         this.setState({
             name: event.target.value
         })
+    }
         render(){
+            
             return (
                 <div>
                     <input type="text" onChange={this.changeName} value={this.state.name} />
-                    <h1>Hello {this.state.name}</h1>
+                    <h1 className="Card">Hello {this.state.name}</h1>
                 </div>
             )
         }
 
-    }
 }
 
 export default twoWayDataBinding
